@@ -1,0 +1,6 @@
+﻿<?xml version="1.0"?>
+<Menu>
+	<Item name="py_编辑" tv="246421280">
+		<Item name="py_搜索" tv="246422144"></Item></Item>
+	<Item name="py_光标" tv="246420632" last="1"></Item>
+</Menu>

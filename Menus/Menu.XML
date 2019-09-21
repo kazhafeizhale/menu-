@@ -1,0 +1,7 @@
+﻿<?xml version="1.0"?>
+<Menu color="32768">
+	<Item name="修改密码" tv="13617808"></Item>
+	<Item name="1" tv="13616296" color="255" last="1">
+		<Item name="34" tv="13617592" color="8388672"><Item name="4" tv="13616584"></Item></Item></Item>
+	<Item name="3" tv="13616512"></Item>
+	<Item name="2" tv="13616368"></Item></Menu>

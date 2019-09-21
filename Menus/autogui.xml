@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<Menu>
+	<Item name="光标" tv="55905120">
+		<Item name="前一个mark" tv="55906272"></Item>
+		<Item name="后一个mark" tv="55904760"></Item>
+		<Item name="清除mark" tv="55904976"></Item>
+		<Item name="goto" tv="55905192"></Item></Item>
+	<Item name="编辑" tv="55904256">
+		<Item name="全选" tv="55906344" last="1"></Item></Item>
+</Menu>
