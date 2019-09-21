@@ -3,37 +3,49 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-Menu,Menu,Add,1.1 linux,Function
-Menu,1.1 linux,Add,1.1.1 shellcommand,Function
-Menu,1.1.1 shellcommand,Add,1111_修改密码,Function
-Menu,1.1.1 shellcommand,Add,1112_杀死进程,Function
-Menu,1.1.1 shellcommand,Add,1113_host命令,Function
-Menu,1.1 linux,Add,112_socket,Function
-Menu,Menu,Add,1.2 C语言编程,Function
-Menu,1.2 C语言编程,Add,121_打印,Function
-Menu,1.2 C语言编程,Add,122_switch语句,Function
-Menu,Menu,Add,1.3mathematica,Function
-Menu,1.3mathematica,Add,131_转化为c代码,Function
-Menu,Menu,Add,1.4_ahk,Function
-Menu,1.4_ahk,Add,141_窗口命令,Function
-Menu,141_窗口命令,Add,1411_窗口置顶,Function
-Menu,Menu,Add,1.5 C++编程,Function
-Menu,1.5 C++编程,Add,151_函数,Function
+Menu,Menu,Add,linux_11,Function
+Menu,linux_11,Add,shellcommand_111,Function
+Menu,shellcommand_111,Add,修改密码_1111,Function
+Menu,shellcommand_111,Add,杀死进程_1112,Function
+Menu,shellcommand_111,Add,host命令_1113,Function
+Menu,linux_11,Add,112_socket,Function
+Menu,linux_11,Add,进程_113,Function
+Menu,linux_11,Add,线程_114,Function
+Menu,linux_11,Add,数据库_115,Function
+Menu,Menu,Add,C语言编程_12,Function
+Menu,C语言编程_12,Add,函数_121,Function
+Menu,C语言编程_12,Add,表达式_122,Function
+Menu,C语言编程_12,Add,流程控制_123,Function
+Menu,C语言编程_12,Add,字符操作_124,Function
+Menu,C语言编程_12,Add,数据结构_125,Function
+Menu,数据结构_125,Add,结构体_1251,Function
+Menu,数据结构_125,Add,链表_1252,Function
+Menu,数据结构_125,Add,队列_1253,Function
+Menu,数据结构_125,Add,栈_1254,Function
+Menu,Menu,Add,mathematica_13,Function
+Menu,mathematica_13,Add,转化为c代码_131,Function
+Menu,Menu,Add,ahk_14,Function
+Menu,ahk_14,Add,窗口命令_141,Function
+Menu,窗口命令_141,Add,窗口置顶_1411,Function
+Menu,Menu,Add,C++编程_15,Function
+Menu,C++编程_15,Add,151_函数,Function
 Menu,151_函数,Add,1511_引用,Function
 Menu,1511_引用,Add,引用的使用_15111,Function
-Menu,1.5 C++编程,Add,类,Function
-Menu,1.5 C++编程,Add,数据类型,Function
-Menu,1.5 C++编程,Add,表达式,Function
-Menu,1.5 C++编程,Add,STL,Function
-Menu,Menu,Add,1.1 linux,:1.1 linux
-Menu,1.1 linux,Add,1.1.1 shellcommand,:1.1.1 shellcommand
-Menu,Menu,Add,1.2 C语言编程,:1.2 C语言编程
-Menu,Menu,Add,1.3mathematica,:1.3mathematica
-Menu,Menu,Add,1.4_ahk,:1.4_ahk
-Menu,1.4_ahk,Add,141_窗口命令,:141_窗口命令
-Menu,Menu,Add,1.5 C++编程,:1.5 C++编程
-Menu,1.5 C++编程,Add,151_函数,:151_函数
+Menu,C++编程_15,Add,类_152,Function
+Menu,C++编程_15,Add,数据类型_153,Function
+Menu,C++编程_15,Add,表达式_154,Function
+Menu,C++编程_15,Add,STL_155,Function
+Menu,Menu,Add,linux_11,:linux_11
+Menu,linux_11,Add,shellcommand_111,:shellcommand_111
+Menu,Menu,Add,C语言编程_12,:C语言编程_12
+Menu,C语言编程_12,Add,数据结构_125,:数据结构_125
+Menu,Menu,Add,mathematica_13,:mathematica_13
+Menu,Menu,Add,ahk_14,:ahk_14
+Menu,ahk_14,Add,窗口命令_141,:窗口命令_141
+Menu,Menu,Add,C++编程_15,:C++编程_15
+Menu,C++编程_15,Add,151_函数,:151_函数
 Menu,151_函数,Add,1511_引用,:1511_引用
+
 return
 
 
@@ -45,27 +57,8 @@ Function(Item,Index,Menu)
     fn := Func(Item)
     fn.Call()
 }
-引用的使用_15111()
-{        
-    CommandText = 
-    (
-const使用方法：
-    一、修改传入函数的值时
-        1、默认数据类型用指针。int ,float, double ,char
-        2、结构体用指针或者引用
-        3、数组只能用指针
-        4、类对象只能用引用
-    二、不修改传入函数的值时
-        1、默认数据类型用传值
-        2、结构体用const 指针或者const引用
-        3、数组只能用const 指针
-        4、类对象用const引用
-    )    
-    Instruction := CommandText
-    Content := ""
-    TaskDialog(Instruction, Content, "", 0x1, 0)
-}
-1111_修改密码()
+
+修改密码_1111()
 {
         UserInput:=""    
         Var =
@@ -81,7 +74,7 @@ passwd
         ascinput(inputvar)    
     
 }
-1112_杀死进程()
+杀死进程_1112()
 {    
          Var =
         (
@@ -93,7 +86,7 @@ kill
         inputvar:= inputvar . UserInput
         ascinput(inputvar)
 }
-1113_host命令()
+host命令_1113()
 {
          Var =
         (
@@ -118,41 +111,8 @@ host
         ascinput(inputvar)    
     
 }
-121_打印()
-{
-         Var =
-        (
-        )
-        inputvar = 
-        (
-        printf("",);
-        )
-        inputvar:= inputvar . " " . Var
-        ascinput(inputvar)    
-    
-}
 
-122_switch语句()
-{
-         Var =
-        (
-        )
-        inputvar = 
-        (
-switch()
-{
-    case :
-    break;
-    defualt:
-    break;
-};
-        )
-        clipboard:=inputvar
-        ToolTip("Clipboard")    
-    
-    
-}
-131_转化为c代码()
+转化为c代码_131()
 {
     Var =
     (
@@ -166,7 +126,7 @@ CForm[expr]
     
     
 }
-1411_窗口置顶()
+窗口置顶_1411()
 {
     Var =
     (
@@ -181,7 +141,26 @@ WinSet, AlwaysOnTop, On, ahk_id %MouseWin%
     ToolTip("Clipboard")
 
 }
-
+引用的使用_15111()
+{        
+    CommandText = 
+    (
+const使用方法：
+    一、修改传入函数的值时
+        1、默认数据类型用指针。int ,float, double ,char
+        2、结构体用指针或者引用
+        3、数组只能用指针
+        4、类对象只能用引用
+    二、不修改传入函数的值时
+        1、默认数据类型用传值
+        2、结构体用const 指针或者const引用
+        3、数组只能用const 指针
+        4、类对象用const引用
+    )    
+    Instruction := CommandText
+    Content := ""
+    TaskDialog(Instruction, Content, "", 0x1, 0)
+}
 ;说明 在QQ聊天窗口中是乱码，需要发送UTF-16BE编码
 ascinput(string){
 u :=  A_IsUnicode ? 2 : 1 ;Unicode版ahk字符长度是2

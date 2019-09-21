@@ -1,25 +1,35 @@
 ﻿<?xml version="1.0"?>
 <Menu>
-	<Item name="1.1 linux" tv="11356312">
-		<Item name="1.1.1 shellcommand" tv="11356528">
-			<Item name="1111_修改密码" tv="11356744"></Item>
-			<Item name="1112_杀死进程" tv="11356384"></Item>
-			<Item name="1113_host命令" tv="11357464"></Item></Item>
-		<Item name="112_socket" tv="11357968"></Item></Item>
-	<Item name="1.2 C语言编程" tv="11357248">
-		<Item name="121_打印" tv="11357608"></Item>
-		<Item name="122_switch语句" tv="11357536"></Item></Item>
-	<Item name="1.3mathematica" tv="11357680">
-		<Item name="131_转化为c代码" tv="11357752"></Item></Item>
-	<Item name="1.4_ahk" tv="11356456">
-		<Item name="141_窗口命令" tv="11354512">
-			<Item name="1411_窗口置顶" tv="11355016"></Item></Item></Item>
-	<Item name="1.5 C++编程" tv="11355088">
-		<Item name="151_函数" tv="11355448">
-			<Item name="1511_引用" tv="11354440">
-				<Item name="引用的使用_15111" tv="11355952"></Item></Item></Item>
-		<Item name="类" tv="11356168"></Item>
-		<Item name="数据类型" tv="11354224"></Item>
-		<Item name="表达式" tv="11356240"></Item>
-		<Item name="STL" tv="11354080"></Item></Item>
+	<Item name="linux_11" tv="13002904">
+		<Item name="shellcommand_111" tv="13003048">
+			<Item name="修改密码_1111" tv="13003768"></Item>
+			<Item name="杀死进程_1112" tv="13004704"></Item>
+			<Item name="host命令_1113" tv="13003480"></Item></Item>
+		<Item name="112_socket" tv="13003192"></Item>
+		<Item name="进程_113" tv="13003336"></Item>
+		<Item name="线程_114" tv="13003912"></Item>
+		<Item name="数据库_115" tv="13004200"></Item></Item>
+	<Item name="C语言编程_12" tv="13006000">
+		<Item name="函数_121" tv="13006648"></Item>
+		<Item name="表达式_122" tv="13007008"></Item>
+		<Item name="流程控制_123" tv="13007440"></Item>
+		<Item name="字符操作_124" tv="13005208"></Item>
+		<Item name="数据结构_125" tv="13005280">
+			<Item name="结构体_1251" tv="13011760"></Item>
+			<Item name="链表_1252" tv="13010320"></Item>
+			<Item name="队列_1253" tv="13011976"></Item>
+			<Item name="栈_1254" tv="13010392"></Item></Item></Item>
+	<Item name="mathematica_13" tv="13010536">
+		<Item name="转化为c代码_131" tv="13011184"></Item></Item>
+	<Item name="ahk_14" tv="13012048">
+		<Item name="窗口命令_141" tv="13010824">
+			<Item name="窗口置顶_1411" tv="13009816" last="1"></Item></Item></Item>
+	<Item name="C++编程_15" tv="13011616">
+		<Item name="151_函数" tv="13010608">
+			<Item name="1511_引用" tv="13011112">
+				<Item name="引用的使用_15111" tv="13009888"></Item></Item></Item>
+		<Item name="类_152" tv="13011328"></Item>
+		<Item name="数据类型_153" tv="13011256"></Item>
+		<Item name="表达式_154" tv="13011400"></Item>
+		<Item name="STL_155" tv="13010680"></Item></Item>
 </Menu>
