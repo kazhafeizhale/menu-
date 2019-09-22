@@ -3,49 +3,48 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-Menu,Menu,Add,linux_11,Function
-Menu,linux_11,Add,shellcommand_111,Function
-Menu,shellcommand_111,Add,修改密码_1111,Function
-Menu,shellcommand_111,Add,杀死进程_1112,Function
-Menu,shellcommand_111,Add,host命令_1113,Function
-Menu,linux_11,Add,112_socket,Function
-Menu,linux_11,Add,进程_113,Function
-Menu,linux_11,Add,线程_114,Function
-Menu,linux_11,Add,数据库_115,Function
-Menu,Menu,Add,C语言编程_12,Function
-Menu,C语言编程_12,Add,函数_121,Function
-Menu,C语言编程_12,Add,表达式_122,Function
-Menu,C语言编程_12,Add,流程控制_123,Function
-Menu,C语言编程_12,Add,字符操作_124,Function
-Menu,C语言编程_12,Add,数据结构_125,Function
-Menu,数据结构_125,Add,结构体_1251,Function
-Menu,数据结构_125,Add,链表_1252,Function
-Menu,数据结构_125,Add,队列_1253,Function
-Menu,数据结构_125,Add,栈_1254,Function
-Menu,Menu,Add,mathematica_13,Function
-Menu,mathematica_13,Add,转化为c代码_131,Function
-Menu,Menu,Add,ahk_14,Function
-Menu,ahk_14,Add,窗口命令_141,Function
-Menu,窗口命令_141,Add,窗口置顶_1411,Function
-Menu,Menu,Add,C++编程_15,Function
-Menu,C++编程_15,Add,151_函数,Function
-Menu,151_函数,Add,1511_引用,Function
-Menu,1511_引用,Add,引用的使用_15111,Function
-Menu,C++编程_15,Add,类_152,Function
-Menu,C++编程_15,Add,数据类型_153,Function
-Menu,C++编程_15,Add,表达式_154,Function
-Menu,C++编程_15,Add,STL_155,Function
-Menu,Menu,Add,linux_11,:linux_11
-Menu,linux_11,Add,shellcommand_111,:shellcommand_111
-Menu,Menu,Add,C语言编程_12,:C语言编程_12
-Menu,C语言编程_12,Add,数据结构_125,:数据结构_125
-Menu,Menu,Add,mathematica_13,:mathematica_13
-Menu,Menu,Add,ahk_14,:ahk_14
-Menu,ahk_14,Add,窗口命令_141,:窗口命令_141
-Menu,Menu,Add,C++编程_15,:C++编程_15
-Menu,C++编程_15,Add,151_函数,:151_函数
-Menu,151_函数,Add,1511_引用,:1511_引用
-
+Menu,Menu,Add,linux,Function
+Menu,linux,Add,shellcommand,Function
+Menu,shellcommand,Add,修改密码_75NKXPWLQ,Function
+Menu,shellcommand,Add,杀死进程_75NKXPWMB,Function
+Menu,shellcommand,Add,host命令_75NKXPWMG,Function
+Menu,linux,Add,socket,Function
+Menu,linux,Add,进程,Function
+Menu,linux,Add,线程,Function
+Menu,linux,Add,数据库,Function
+Menu,Menu,Add,C语言编程,Function
+Menu,C语言编程,Add,函数,Function
+Menu,C语言编程,Add,表达式,Function
+Menu,C语言编程,Add,流程控制,Function
+Menu,C语言编程,Add,字符操作,Function
+Menu,C语言编程,Add,数据结构,Function
+Menu,数据结构,Add,结构体,Function
+Menu,数据结构,Add,链表,Function
+Menu,数据结构,Add,队列,Function
+Menu,数据结构,Add,栈,Function
+Menu,Menu,Add,mathematica,Function
+Menu,mathematica,Add,转化为c代码_75NKXPVOD,Function
+Menu,Menu,Add,ahk,Function
+Menu,ahk,Add,窗口命令,Function
+Menu,窗口命令,Add,窗口置顶_75NKXPVXG,Function
+Menu,Menu,Add,C++编程,Function
+Menu,C++编程,Add,函数,Function
+Menu,函数,Add,引用,Function
+Menu,引用,Add,引用的使用_75NKXPVS5,Function
+Menu,C++编程,Add,类,Function
+Menu,C++编程,Add,数据类型,Function
+Menu,C++编程,Add,表达式,Function
+Menu,C++编程,Add,STL,Function
+Menu,Menu,Add,linux,:linux
+Menu,linux,Add,shellcommand,:shellcommand
+Menu,Menu,Add,C语言编程,:C语言编程
+Menu,C语言编程,Add,数据结构,:数据结构
+Menu,Menu,Add,mathematica,:mathematica
+Menu,Menu,Add,ahk,:ahk
+Menu,ahk,Add,窗口命令,:窗口命令
+Menu,Menu,Add,C++编程,:C++编程
+Menu,C++编程,Add,函数,:函数
+Menu,函数,Add,引用,:引用
 return
 
 
@@ -58,7 +57,7 @@ Function(Item,Index,Menu)
     fn.Call()
 }
 
-修改密码_1111()
+修改密码_75NKXPWLQ()
 {
         UserInput:=""    
         Var =
@@ -74,7 +73,7 @@ passwd
         ascinput(inputvar)    
     
 }
-杀死进程_1112()
+杀死进程_75NKXPWMB()
 {    
          Var =
         (
@@ -86,7 +85,7 @@ kill
         inputvar:= inputvar . UserInput
         ascinput(inputvar)
 }
-host命令_1113()
+host命令_75NKXPWMG()
 {
          Var =
         (
@@ -112,7 +111,7 @@ host
     
 }
 
-转化为c代码_131()
+转化为c代码_75NKXPVOD()
 {
     Var =
     (
@@ -126,7 +125,7 @@ CForm[expr]
     
     
 }
-窗口置顶_1411()
+窗口置顶_75NKXPVXG()
 {
     Var =
     (
@@ -141,7 +140,7 @@ WinSet, AlwaysOnTop, On, ahk_id %MouseWin%
     ToolTip("Clipboard")
 
 }
-引用的使用_15111()
+引用的使用_75NKXPVS5()
 {        
     CommandText = 
     (
@@ -161,6 +160,8 @@ const使用方法：
     Content := ""
     TaskDialog(Instruction, Content, "", 0x1, 0)
 }
+
+
 ;说明 在QQ聊天窗口中是乱码，需要发送UTF-16BE编码
 ascinput(string){
 u :=  A_IsUnicode ? 2 : 1 ;Unicode版ahk字符长度是2
@@ -224,7 +225,6 @@ str =
 }
 
 
-
 ToolTip(label){
   ToolTip, %label%, 930, 650
 
@@ -235,9 +235,6 @@ ToolTip(label){
   ToolTip
   Return
 }
-
-
-
 
 TaskDialog(Instruction, Content := "", Title := "", Buttons := 1, IconID := 0, IconRes := "", Owner := 0x10010) {
     Local hModule, LoadLib, Ret

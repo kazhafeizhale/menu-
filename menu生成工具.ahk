@@ -282,9 +282,11 @@ MenuHandler(a,b,c){
 		if(Item="Help")
 			return Help()
 		else if(Item="Online_Manual")
-			return m("Coming soon")
+			{
+                clipboard:=ToBase(A_Now,36)
+            }
 	}
-	m("Coming Soon...")
+	;m("Coming Soon...")
 }
 ShowMenu(){
 	All:=MenuXML.SN("//Menu/descendant::*")
@@ -610,4 +612,8 @@ t(x*){
 	killtip:
 	ToolTip
 	return
+}
+
+ToBase(n,b){
+    return (n < b ? "" : ToBase(n//b,b)) . ((d:=Mod(n,b)) < 10 ? d : Chr(d+55))  
 }
